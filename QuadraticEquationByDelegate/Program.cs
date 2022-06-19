@@ -3,9 +3,9 @@
 while (true)
     {
         Console.Clear();
+
         Console.WriteLine("Эта программа решает квадратные уравнения вида ax2+bx+c=0");
         Console.Write("Введите первый коэффициент A, не равный 0: ");
-
         if (int.TryParse(Console.ReadLine(), out int a) && a != 0)
             _ = a;
         else
@@ -32,11 +32,8 @@ while (true)
             Console.ReadLine();
             continue;
         }
-    Root root = new Root();
-    RootEquation result = root.GetRoot;
-
-
-
+        Root root = new Root();
+        RootEquation result = root.GetRoot;
 
         Console.WriteLine(Test(result, a, b, c));
         Console.ReadLine();
